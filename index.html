@@ -35,8 +35,8 @@
                     Climate:
                     <select id="climate-select">
                         <option value="alpine">Alpine</option>
-                        <option value="rain-forest">Rain Forest</option>
-                        <option value="valley">Valley</option>
+                        <option value="rainforest">Rainforest</option>
+                        <option value="desert">Desert</option>
                     </select>
                 </label>
                 <label>
@@ -50,9 +50,9 @@
                 <label>
                     Architecture:
                     <select id="architecture-select">
-                        <option value="Contemporary">Contemporary</option>
-                        <option value="Adobe">Adobe</option>
-                        <option value="Country">Country</option>
+                        <option value="contemporary">Contemporary</option>
+                        <option value="adobe">Adobe</option>
+                        <option value="hobbit">Hobbit</option>
                     </select>
                 </label>
                 <label>
@@ -63,10 +63,16 @@
                     </div>
                 </label>
             </section>
-            <article id="display-article" class="color-theme font-theme">
+            <article id="display-article" class="pastel">
                 <h1 id="name-display">Portlandia</h1>
-                <img id="climate-display" src="" alt="" />
-                <img id="architecture-display" src="" />
+                <div id="images">
+                    <img id="climate-display" src="./images/climate/Alpine.png" alt="something" />
+                    <img
+                        id="architecture-display"
+                        src="./images/architecture/hobbit.png"
+                        alt="arhitecture image"
+                    />
+                </div>
                 <div class="attractions-display">
                     <h2>Attractions</h2>
                     <ul id="attraction-list"></ul>
