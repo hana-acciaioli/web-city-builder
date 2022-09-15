@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>City Builder App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header></header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section id="input-section">
+                <label>
+                    City name:
+                    <input id="name-input" value="" />
+                </label>
+                <label>
+                    Climate:
+                    <select id="climate-select">
+                        <option value="alpine">Alpine</option>
+                        <option value="rain-forest">Rain Forest</option>
+                        <option value="valley">Valley</option>
+                    </select>
+                </label>
+                <label>
+                    Color theme:
+                    <select id="color-select">
+                        <option value="pastel">Pastel</option>
+                        <option value="vibrant">Vibrant</option>
+                        <option value="natural">Natural</option>
+                    </select>
+                </label>
+                <label>
+                    Architecture:
+                    <select id="architecture-select">
+                        <option value="Contemporary">Contemporary</option>
+                        <option value="Adobe">Adobe</option>
+                        <option value="Country">Country</option>
+                    </select>
+                </label>
+                <label>
+                    City attractions:
+                    <div class="add-attraction">
+                        <input id="attraction-input" />
+                        <button id="add-attraction-button">+</button>
+                    </div>
+                </label>
+            </section>
+            <article id="display-article" class="color-theme font-theme">
+                <h1 id="name-display">Portlandia</h1>
+                <img id="climate-display" src="" alt="" />
+                <img id="architecture-display" src="" />
+                <div class="attractions-display">
+                    <h2>Attractions</h2>
+                    <ul id="attraction-list"></ul>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>

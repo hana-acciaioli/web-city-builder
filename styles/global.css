@@ -8,8 +8,8 @@
 body {
     font-family: var(--primary-font);
     background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
+    /* display: grid;
+    grid-template-rows: auto 1fr; */
 }
 
 header {
@@ -32,4 +32,19 @@ header .logo {
 
 main {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 200px min-content;
+    gap: 40px;
+    align-items: start;
+}
+
+article {
+    display: grid;
+    justify-items: center;
+    border: 3px solid #317bb8;
+}
+label {
+    display: grid;
+    font-size: 0.8em;
+    gap: 2px;
 }
