@@ -1,13 +1,13 @@
 :root {
     --background: rgb(224, 234, 247);
     --header-background: rgb(254, 251, 245);
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
+    /* --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
+        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif; */
 }
 
 body {
-    font-family: var(--primary-font);
-    background: var(--background);
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
+    background: var(--background); */
     /* display: grid;
     grid-template-rows: auto 1fr; */
 }
@@ -59,7 +59,7 @@ label {
 
 .vibrant {
     color: #06d6a0;
-    border: 20px solid #d4a373;
+    border: 20px solid #c31d86;
     background-image: url(https://cdn.shopify.com/s/files/1/0153/0623/products/JardinImaginarioWallpaperinDarkfromtheWallpaperCompendiumCollectionbyMindtheGap_869dd2df-67dc-4c88-bae5-d93ee968e1da_720x.jpg?v=1586976773);
 }
 
@@ -77,4 +77,15 @@ label {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.adobe {
+    font-family: 'Space Mono', monospace;
+}
+
+.hobbit {
+    font-style: italic;
+}
+
+.contemporary {
 }
