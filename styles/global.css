@@ -49,7 +49,7 @@ label {
     gap: 2px;
 }
 
-.pastel {
+.alpine {
     background-image: url(https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFzdGVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
     color: #3d4961;
     padding: 20px;
@@ -57,13 +57,13 @@ label {
     margin: 20px #f9e4d5;
 }
 
-.vibrant {
+.desert {
     color: #06d6a0;
     border: 20px solid #c31d86;
     background-image: url(https://cdn.shopify.com/s/files/1/0153/0623/products/JardinImaginarioWallpaperinDarkfromtheWallpaperCompendiumCollectionbyMindtheGap_869dd2df-67dc-4c88-bae5-d93ee968e1da_720x.jpg?v=1586976773);
 }
 
-.natural {
+.rainforest {
     color: #48311b;
     border: 20px solid #d4a373;
     background-image: url(https://img2.mahoneswallpapershop.com/prodimage/ProductImage/560/7addeee0-79bb-4ddb-80f6-0c1079ff2a20.jpg);

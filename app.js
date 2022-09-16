@@ -4,12 +4,10 @@
 const displayArticle = document.getElementById('display-article');
 const cityName = document.getElementById('city-name');
 const climateSelect = document.getElementById('climate-select');
-const colorSelect = document.getElementById('color-select');
 const architectureSelect = document.getElementById('architecture-select');
 const nameDisplay = document.getElementById('name-display');
 const climateDisplay = document.getElementById('climate-display');
 const architectureDisplay = document.getElementById('architecture-display');
-// const attractionsDisplay = document.getElementById('attractions-display');
 const addAttractionButton = document.getElementById('add-attraction-button');
 const attractionInput = document.getElementById('attraction-input');
 const attractionList = document.getElementById('attraction-list');
@@ -18,7 +16,6 @@ const attractionList = document.getElementById('attraction-list');
 let city = {
     name: '...',
     climate: 'desert',
-    color: 'pastel',
     architecture: 'adobe',
     attractions: [],
 };
@@ -32,11 +29,6 @@ cityName.addEventListener('input', () => {
 
 climateSelect.addEventListener('change', () => {
     city.climate = climateSelect.value;
-    displayCity();
-});
-
-colorSelect.addEventListener('change', () => {
-    city.color = colorSelect.value;
     displayCity();
 });
 
@@ -56,7 +48,7 @@ addAttractionButton.addEventListener('click', () => {
 function displayCity() {
     nameDisplay.textContent = city.name;
     climateDisplay.src = 'images/climate/' + city.climate + '.png';
-    displayArticle.classList = city.color;
+    displayArticle.classList = city.climate;
     displayArticle.classList.add(city.architecture);
     architectureDisplay.src = 'images/architecture/' + city.architecture + '.png';
 }
