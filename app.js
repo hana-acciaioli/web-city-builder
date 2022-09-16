@@ -16,7 +16,7 @@ const attractionList = document.getElementById('attraction-list');
 
 /* State */
 let city = {
-    name: 'Treeland',
+    name: '...',
     climate: 'desert',
     color: 'pastel',
     architecture: 'adobe',
