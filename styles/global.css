@@ -1,15 +1,13 @@
 :root {
     --background: rgb(224, 234, 247);
     --header-background: rgb(254, 251, 245);
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
+    /* --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
+        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif; */
 }
 
 body {
-    font-family: var(--primary-font);
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
     background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
 }
 
 header {
@@ -32,4 +30,57 @@ header .logo {
 
 main {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 200px min-content;
+    gap: 40px;
+    align-items: start;
+}
+
+article {
+    display: grid;
+    justify-items: center;
+    border: 3px solid #317bb8;
+}
+label {
+    display: grid;
+    font-size: 0.8em;
+    gap: 2px;
+}
+
+.alpine {
+    background-image: url(https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFzdGVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    color: #3d4961;
+    padding: 20px;
+    border: 20px solid #d0bbf0;
+    margin: 20px #f9e4d5;
+}
+
+.desert {
+    color: #06d6a0;
+    border: 20px solid #c31d86;
+    background-image: url(https://cdn.shopify.com/s/files/1/0153/0623/products/JardinImaginarioWallpaperinDarkfromtheWallpaperCompendiumCollectionbyMindtheGap_869dd2df-67dc-4c88-bae5-d93ee968e1da_720x.jpg?v=1586976773);
+}
+
+.rainforest {
+    color: #48311b;
+    border: 20px solid #d4a373;
+    background-image: url(https://img2.mahoneswallpapershop.com/prodimage/ProductImage/560/7addeee0-79bb-4ddb-80f6-0c1079ff2a20.jpg);
+}
+
+#images {
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+#images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.adobe {
+    font-family: 'Space Mono', monospace;
+}
+
+.hobbit {
+    font-style: italic;
 }

@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>City Builder App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet"/>
+        
+        
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        
+        
+    </head>
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+    <body>
+        <header></header>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
-
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section id="input-section">
+                <label>
+                    City name:
+                    <input id="city-name" value="" />
+                </label>
+                <label>
+                    Climate:
+                    <select id="climate-select">
+                        <option value="alpine">Alpine</option>
+                        <option value="rainforest">Rainforest</option>
+                        <option value="desert">Desert</option>
+                    </select>
+                </label>
+                <!-- <label>
+                    Color theme:
+                    <select id="color-select">
+                        <option value="pastel">Pastel</option>
+                        <option value="vibrant">Vibrant</option>
+                        <option value="natural">Natural</option>
+                    </select>
+                </label> -->
+                <label>
+                    Architecture:
+                    <select id="architecture-select">
+                        <option value="contemporary">Contemporary</option>
+                        <option value="adobe">Adobe</option>
+                        <option value="hobbit">Hobbit</option>
+                    </select>
+                </label>
+                <label>
+                    City attractions:
+                    <div class="add-attraction">
+                        <input id="attraction-input" />
+                        <button id="add-attraction-button">+</button>
+                    </div>
+                </label>
+            </section>
+            <article id="display-article" class="pastel mono">
+                <!-- <div id=""> -->
+                    <h1> Welcome to <span id="name-display"></span></h1>
+                    <div id="images">
+                        <img
+                            id="climate-display"
+                            src=""
+                            alt="something"
+                        />
+                        <img
+                            id="architecture-display"
+                            src=""
+                            alt="architecture image"
+                        />
+                    </div>
+                </div>
+                <div class="attractions-display">
+                    <h2>Attractions:</h2>
+                    <ul id="attraction-list"></ul>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>
